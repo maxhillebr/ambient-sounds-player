@@ -1,17 +1,6 @@
 .sidebar {
-  background-color: #ebeff8;
-  color: #000000;
-  height: 100vh;
-  width: 200px;
-  position: absolute;
-  top: 145px;
-  left: 20px;
-  padding-top: 20px;
-  transition: left 0.3s ease;
+  grid-area: 2 / 1 / 4 / 2;
   text-align: center;
-  border-radius: 20px;
-  border: 2px solid #dfe4ef;
-  box-shadow: 1px 3px 20px 3px #dfe4ef;
 }
 
 .content {

@@ -11,23 +11,19 @@ import reportWebVitals from "./reportWebVitals";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <HeaderNav />
-    <Sidebar />
-    <div id="wrapper">
-      <div class="grid-container">
-        <div class="grid-item">
-          {" "}
-          <Categories />
-        </div>
-        <div class="grid-item">Visual</div>
-        <div class="grid-item">
-          <h2>Available Sounds</h2>
-          <AudioPlayer />
-          <AudioPlayer2 />
-        </div>
-        <div class="grid-item">
-          Individual Player with Volume, Play/Pause for every Sound
-        </div>
+    <div class="container">
+      <HeaderNav />
+      <Sidebar />
+      <div class="footer box">©Max Hillebrand 2023</div>
+      <Categories />
+      <div class="audio box">
+        <h2>Audio Box to select from category</h2>
+      </div>
+      <div class="visual box">
+        <h2>Visual effects when playing music</h2>
+      </div>
+      <div class="audio-player box">
+        <h2>Audioplayer</h2>
       </div>
     </div>
   </React.StrictMode>

@@ -33,15 +33,40 @@ h2 {
   font-family: "IBM Plex Sans Condensed", sans-serif;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: 10px;
+/* CSS for the box shadow and so on */
+
+.box {
+  background-color: #ebeff8;
+  padding: 20px 20px;
+  border-radius: 20px;
+  border: 2px solid #dfe4ef;
+  box-shadow: 1px 3px 20px 3px #dfe4ef;
 }
 
-.grid-item {
-  padding: 20px;
-  background-color: #f0f0f0;
-  border: 1px solid #ccc;
+/* Grid Layout Container ->
+Take every css to the right position if needed! */
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1.2fr 1.2fr;
+  gap: 29px;
+  grid-auto-flow: row;
+  margin: 20px;
+}
+
+.footer {
+  grid-area: 4 / 1 / 5 / 4;
+  text-align: center;
+}
+
+.audio {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.visual {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
+.audio-player {
+  grid-area: 3 / 3 / 4 / 4;
 }

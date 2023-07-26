@@ -5,10 +5,14 @@ import "../css/headernav.css";
 
 const HeaderNav = () => {
   return (
-    <div className="header">
-      <a href="#default" className="logo">
-        <FontAwesomeIcon icon={faHeadphones} /> &nbsp; Max' Ambient Music
-      </a>
+    <div className="header box">
+      <div className="logo">
+        {" "}
+        <a href="#default" className="logo">
+          <FontAwesomeIcon icon={faHeadphones} />
+        </a>
+      </div>
+
       <div className="header-right">
         <a className="active" href="#home">
           Home
