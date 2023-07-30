@@ -1,0 +1,6 @@
+/* Audiobox Container CSS for Components */
+
+.audiobox-container {
+  display: flex;
+  justify-content: space-around;
+}
