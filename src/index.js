@@ -29,11 +29,9 @@ root.render(
       <div className="audio-player box">
         <h2>Audioplayer</h2>
         <div id="add-audio-player">
-          <AudioPlayer />
-          <AudioPlayer2 />
+          <Test />
         </div>
       </div>
-      <Test />
     </div>
   </React.StrictMode>
 );

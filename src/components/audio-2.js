@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faStop, faPause } from "@fortawesome/free-solid-svg-icons";
-import Waves from "../audio/waves-loop.mp3";
+// import Waves from "/audio/waves-loop.mp3";
 import "../css/music-player.css";
 
 const AudioPlayer2 = () => {
@@ -38,35 +38,35 @@ const AudioPlayer2 = () => {
     audioRef.current.volume = newVolume;
   };
 
-  return (
-    <div>
-      <h3>{audioName}</h3>
-      <audio ref={audioRef} src={Waves} />
-      <div className="audioplayer-wrapper">
-        <button onClick={handlePlayPause}>
-          {isPlaying ? (
-            <FontAwesomeIcon icon={faPause} />
-          ) : (
-            <FontAwesomeIcon icon={faPlay} />
-          )}
-        </button>
-        <button onClick={restartAudio}>
-          <FontAwesomeIcon icon={faStop} />
-        </button>
-        <label htmlFor="volume">Volume</label>
-        <input
-          name="volume"
-          type="range"
-          min="0"
-          max="1"
-          step="0.01"
-          value={volume}
-          onChange={handleVolumeChange}
-        />
-        {showDiv && <div className="custom-loader"></div>}
-      </div>
-    </div>
-  );
+  // return (
+  //   <div>
+  //     <h3>{audioName}</h3>
+  //     <audio ref={audioRef} src={Waves} />
+  //     <div className="audioplayer-wrapper">
+  //       <button onClick={handlePlayPause}>
+  //         {isPlaying ? (
+  //           <FontAwesomeIcon icon={faPause} />
+  //         ) : (
+  //           <FontAwesomeIcon icon={faPlay} />
+  //         )}
+  //       </button>
+  //       <button onClick={restartAudio}>
+  //         <FontAwesomeIcon icon={faStop} />
+  //       </button>
+  //       <label htmlFor="volume">Volume</label>
+  //       <input
+  //         name="volume"
+  //         type="range"
+  //         min="0"
+  //         max="1"
+  //         step="0.01"
+  //         value={volume}
+  //         onChange={handleVolumeChange}
+  //       />
+  //       {showDiv && <div className="custom-loader"></div>}
+  //     </div>
+  //   </div>
+  // );
 };
 
 export default AudioPlayer2;

@@ -4,13 +4,13 @@
       "id": 1,
       "musicName": "Waves",
       "artist": "Artist 1",
-      "path": "../audio/waves-loop.mp3"
+      "path": "/audio/waves-loop.mp3"
     },
     {
       "id": 2,
       "musicName": "Afrobeat",
       "artist": "Artist 2",
-      "path": "../audio/afrobeat-live-guitar-melody-marcory.wav"
+      "path": "/audio/afrobeat-live-guitar-melody-marcory.wav"
     },
     {
       "id": 3,

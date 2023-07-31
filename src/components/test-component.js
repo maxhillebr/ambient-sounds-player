@@ -18,9 +18,7 @@ const Test = () => {
         {musicList.map((music) => (
           <li key={music.id}>
             <p>{music.musicName}</p>
-            <p>{music.path}</p>
-            {/* Add an audio player or use the path to load the audio */}
-            <audio controls>
+            <audio controls loop>
               <source src={music.path} type="audio/mpeg" />
               Your browser does not support the audio element.
             </audio>
