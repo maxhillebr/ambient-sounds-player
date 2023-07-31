@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import AudioPlayer from "./audio-1";
+import AudioPlayer2 from "./audio-2";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlay, faHeart } from "@fortawesome/free-solid-svg-icons";
 import "../css/audiobox.css";
