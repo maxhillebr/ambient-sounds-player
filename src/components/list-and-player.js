@@ -4,7 +4,6 @@ import "../css/list-and-player.css";
 const ListAndPlayer = () => {
   const [musicList, setMusicList] = useState([]);
   const [personalList, setPersonalList] = useState([]);
-  const [visible, setVisible] = useState(true);
 
   useEffect(() => {
     // Fetch music data from the JSON file
