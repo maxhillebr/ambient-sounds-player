@@ -4,11 +4,8 @@ import "./index.css";
 import HeaderNav from "./components/headernav";
 import Sidebar from "./components/sidebar";
 import Categories from "./components/categories";
-import Audiobox from "./components/audiobox";
-import AudioPlayer from "./components/audio-1";
-import AudioPlayer2 from "./components/audio-2";
-import Test from "./components/test-component";
 import reportWebVitals from "./reportWebVitals";
+import ListAndPlayer from "./components/list-and-player";
 // Fontawesome -> Copy for future components
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -17,22 +14,13 @@ root.render(
     <div className="container">
       <HeaderNav />
       <Sidebar />
-      <div className="footer box">©Max Hillebrand 2023</div>
       <Categories />
-      <div className="audio box">
-        <h2>Audio Box to select from category</h2>
-        <Audiobox />
-      </div>
       <div className="visual box">
         <h2>Visual effects when playing music</h2>
       </div>
-      <div className="audio-player box">
-        <h2>Audioplayer</h2>
-        <div id="add-audio-player">
-          <Test />
-        </div>
-      </div>
+      <ListAndPlayer />
     </div>
+    <footer className="footer box">©Max Hillebrand 2023</footer>
   </React.StrictMode>
 );
 

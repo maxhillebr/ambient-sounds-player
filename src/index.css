@@ -54,19 +54,34 @@ Take every css to the right position if needed! */
   margin: 20px;
 }
 
+.visual {
+  grid-area: 2 / 3 / 3 / 4;
+}
+
 .footer {
   grid-area: 4 / 1 / 5 / 4;
   text-align: center;
 }
 
-.audio {
-  grid-area: 3 / 2 / 4 / 3;
+button {
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 20px;
+  color: #ffffff;
+  flex-shrink: 0;
+  font-weight: 500;
+  padding: 1rem 1.6rem;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  border: none;
 }
 
-.visual {
-  grid-area: 2 / 3 / 3 / 4;
-}
-
-.audio-player {
-  grid-area: 3 / 3 / 4 / 4;
+button:active {
+  top: 3px;
+  box-shadow: 0 2px 0px #6d4c41;
+  transition: all 0.2s;
 }

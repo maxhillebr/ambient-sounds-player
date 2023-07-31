@@ -1,0 +1,7 @@
+.audio {
+  grid-area: 3 / 2 / 4 / 3;
+}
+
+.audio-player {
+  grid-area: 3 / 3 / 4 / 4;
+}
