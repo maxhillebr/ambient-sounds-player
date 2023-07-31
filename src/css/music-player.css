@@ -1,17 +1,18 @@
 button {
-  background: #2992ef;
-  font-size: 20px;
-  color: white;
-  border-radius: 7px;
-  box-shadow: 0 7px 0px #4facff7a;
-  display: inline-block;
-  transition: all 0.2s;
-  position: relative;
-  padding: 20px 25px;
-  position: relative;
-  top: 0;
-  cursor: pointer;
-  margin: 0 9px;
+  background-image: linear-gradient(
+    92.88deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 20px;
+  color: #ffffff;
+  flex-shrink: 0;
+  font-weight: 500;
+  padding: 1rem 1.6rem;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  border: none;
 }
 
 button:active {

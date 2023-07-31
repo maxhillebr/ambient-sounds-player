@@ -15,22 +15,21 @@ import { faPlay, faHeart, faPause } from "@fortawesome/free-solid-svg-icons";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <div class="container">
+    <div className="container">
       <HeaderNav />
       <Sidebar />
-      <div class="footer box">©Max Hillebrand 2023</div>
+      <div className="footer box">©Max Hillebrand 2023</div>
       <Categories />
-      <div class="audio box">
+      <div className="audio box">
         <h2>Audio Box to select from category</h2>
         <Audiobox />
       </div>
-      <div class="visual box">
+      <div className="visual box">
         <h2>Visual effects when playing music</h2>
       </div>
-      <div class="audio-player box">
+      <div className="audio-player box">
         <h2>Audioplayer</h2>
-        <AudioPlayer />
-        <AudioPlayer2 />
+        <div id="add-audio-player"></div>
       </div>
     </div>
   </React.StrictMode>

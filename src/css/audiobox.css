@@ -1,6 +1,22 @@
 /* Audiobox Container CSS for Components */
 
-.audiobox-container {
+.audiobox-container-1,
+.audiobox-container-2,
+.audiobox-container-3 {
   display: flex;
   justify-content: space-around;
+  background-image: linear-gradient(
+    270deg,
+    #455eb5 9.16%,
+    #5643cc 43.89%,
+    #673fd7 64.72%
+  );
+  border-radius: 20px;
+  color: #ffffff;
+  flex-shrink: 0;
+  font-weight: 500;
+  padding: 1rem 1.6rem;
+  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
+  transition: all 0.5s;
+  margin: 21px 0px;
 }
