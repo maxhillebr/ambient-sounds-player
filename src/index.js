@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import HeaderNav from "./components/headernav";
 import Sidebar from "./components/sidebar";
-import Categories from "./components/categories";
 import reportWebVitals from "./reportWebVitals";
 import ListAndPlayer from "./components/list-and-player";
 // Fontawesome -> Copy for future components
@@ -14,7 +13,6 @@ root.render(
     <div className="container">
       <HeaderNav />
       <Sidebar />
-      <Categories />
       <div className="visual box">
         <h2>Visual effects when playing music</h2>
       </div>

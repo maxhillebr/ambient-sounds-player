@@ -1,20 +1,77 @@
 {
-  "musicList": [
+  "musicListWaves": [
     {
       "id": 1,
-      "musicName": "Waves",
+      "musicName": "Slow Waves",
+      "artist": "Looperman",
+      "path": "/audio/waves-loop.mp3"
+    },
+    {
+      "id": 2,
+      "musicName": "Sea Waves",
+      "artist": "Looperman",
+      "path": "/audio/waves-sea-waves.mp3"
+    }
+  ],
+
+  "musicListCafe": [
+    {
+      "id": 1,
+      "musicName": "Cafe 1",
       "artist": "Artist 1",
       "path": "/audio/waves-loop.mp3"
     },
     {
       "id": 2,
-      "musicName": "Afrobeat",
+      "musicName": "Cafe 2",
       "artist": "Artist 2",
       "path": "/audio/afrobeat-live-guitar-melody-marcory.wav"
     },
     {
       "id": 3,
-      "musicName": "Song 3",
+      "musicName": "Cafe 3",
+      "artist": "Artist 3",
+      "path": "/music/song3.mp3"
+    }
+  ],
+
+  "musicListGuitar": [
+    {
+      "id": 1,
+      "musicName": "Afro Chill",
+      "artist": "Looperman",
+      "path": "/audio/guitar-afro-chill.wav"
+    },
+    {
+      "id": 2,
+      "musicName": "Spanish Classic Trap",
+      "artist": "Looperman",
+      "path": "/audio/guitar-spanish-classic-trap.wav"
+    },
+    {
+      "id": 3,
+      "musicName": "Slow Grind",
+      "artist": "Looperman",
+      "path": "/audio/guitar-slow-grind.wav"
+    }
+  ],
+
+  "musicListBirds": [
+    {
+      "id": 1,
+      "musicName": "Birds 1",
+      "artist": "Artist 1",
+      "path": "/audio/waves-loop.mp3"
+    },
+    {
+      "id": 2,
+      "musicName": "Birds 2",
+      "artist": "Artist 2",
+      "path": "/audio/afrobeat-live-guitar-melody-marcory.wav"
+    },
+    {
+      "id": 3,
+      "musicName": "Birds 3",
       "artist": "Artist 3",
       "path": "/music/song3.mp3"
     }
