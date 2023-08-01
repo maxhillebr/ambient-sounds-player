@@ -1,6 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHeadphones } from "@fortawesome/free-solid-svg-icons";
+import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "../css/headernav.css";
 
 const HeaderNav = () => {
@@ -8,13 +8,11 @@ const HeaderNav = () => {
     <>
       <div className="header box">
         <div className="logo">
-          {" "}
-          <a href="#default" className="logo">
-            <FontAwesomeIcon icon={faHeadphones} />
-          </a>
+          <img src="/logo-ambient-sounds.png" alt="logo" width="238px" />
         </div>
 
         <div className="header-right">
+          <div className="username">Max</div>
           <div className="profile-img">
             <img
               src="../images/profile-pic.jpg"
@@ -23,11 +21,14 @@ const HeaderNav = () => {
               height="auto"
             />
           </div>
-          <a className="active" href="#home">
-            Home
-          </a>
-          <a hrefName="#contact">Contact</a>
-          <a hrefName="#about">About</a>
+          <div class="header-heart">
+            <div class="heart-color">
+              <FontAwesomeIcon icon={faHeart} />
+            </div>
+          </div>
+          <div>
+            <strong>Logout</strong>
+          </div>
         </div>
       </div>
     </>

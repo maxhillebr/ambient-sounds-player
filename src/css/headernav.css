@@ -19,11 +19,6 @@
   border-radius: 4px;
 }
 
-.header a.logo {
-  font-size: 25px;
-  font-weight: bold;
-}
-
 .header a:hover {
   background-color: #ddd;
   color: black;
@@ -36,6 +31,7 @@
 
 .header-right {
   display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 500px) {
@@ -50,10 +46,31 @@
   }
 }
 
-.profile-img {
-  width: 100px;
-}
-
 .profile-img img {
   border-radius: 50%;
+}
+
+.username {
+  margin: 0px 20px;
+}
+
+.header-heart {
+  border: 1px solid #ced3dd;
+  padding: 14px 16px;
+  border-radius: 50%;
+  margin: 0px 28px;
+  box-shadow: 1px 3px 20px 3px #dfe4ef;
+}
+
+.header-heart:hover {
+  background-color: #f0f5ff;
+  border: 1px solid #f0f5ff;
+  padding: 14px 16px;
+  border-radius: 50%;
+  margin: 0px 28px;
+  box-shadow: 1px 3px 20px 3px #dfe4ef;
+}
+
+.heart-color {
+  color: red;
 }

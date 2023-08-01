@@ -1,10 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faMugHot,
+  faWater,
+  faDove,
+  faGuitar,
+} from "@fortawesome/free-solid-svg-icons";
 import "../css/list-and-player.css";
 
 const ListAndPlayer = () => {
   const [musicList, setMusicList] = useState([]);
   const [personalList, setPersonalList] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState(0);
+  const [selectedCategory, setSelectedCategory] = useState("Waves");
 
   useEffect(() => {
     // Fetch music data from the JSON file
@@ -52,26 +59,34 @@ const ListAndPlayer = () => {
         </div>
         <div className="c-items-container">
           <div className="c-item" onClick={() => setSelectedCategory("Waves")}>
+            <FontAwesomeIcon icon={faWater} />
+            <br />
             Waves
           </div>
           <div className="c-item" onClick={() => setSelectedCategory("Cafe")}>
+            <FontAwesomeIcon icon={faMugHot} />
+            <br />
             Cafe
           </div>
           <div className="c-item" onClick={() => setSelectedCategory("Birds")}>
+            <FontAwesomeIcon icon={faDove} />
+            <br />
             Birds
           </div>
           <div className="c-item" onClick={() => setSelectedCategory("Guitar")}>
+            <FontAwesomeIcon icon={faGuitar} />
+            <br />
             Guitar
           </div>
         </div>
-        <div className="c-pagination">previous 1 2 3 next</div>
+        {/* <div className="c-pagination">previous 1 2 3 next</div> */}
       </div>
       {/* Music List & Personal List  */}
       <div className="audio box">
         <h2>Music List</h2>
         <ul>
           {musicList.map((music) => (
-            <li key={music.id}>
+            <li key={music.id} className="musiclist-box">
               <h3>{music.musicName}</h3>
               {/* Use the full path from the JSON file */}
               <audio controls loop>
