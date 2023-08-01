@@ -35,7 +35,7 @@
 }
 
 .header-right {
-  float: right;
+  display: flex;
 }
 
 @media screen and (max-width: 500px) {
@@ -48,4 +48,12 @@
   .header-right {
     float: none;
   }
+}
+
+.profile-img {
+  width: 100px;
+}
+
+.profile-img img {
+  border-radius: 50%;
 }
