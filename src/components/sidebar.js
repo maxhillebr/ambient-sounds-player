@@ -1,6 +1,10 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+  faUser,
+  faCircleHalfStroke,
+  faComment,
+} from "@fortawesome/free-solid-svg-icons";
 import "../css/sidebar.css";
 
 const Sidebar = () => {
@@ -14,14 +18,14 @@ const Sidebar = () => {
             User
           </li>
           <li>
-            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon icon={faComment} />
             <br />
             About
           </li>
           <li>
-            <FontAwesomeIcon icon={faUser} />
+            <FontAwesomeIcon icon={faCircleHalfStroke} />
             <br />
-            Contact
+            Dark Mode
           </li>
         </ul>
       </div>

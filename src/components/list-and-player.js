@@ -55,7 +55,7 @@ const ListAndPlayer = () => {
       {/* Choose Category */}
       <div className="category box">
         <div className="category-heading">
-          <h2>Categories</h2>
+          <h2>Choose a category</h2>
         </div>
         <div className="c-items-container">
           <div className="c-item" onClick={() => setSelectedCategory("Waves")}>
@@ -83,16 +83,23 @@ const ListAndPlayer = () => {
       </div>
       {/* Music List & Personal List  */}
       <div className="audio box">
-        <h2>Music List</h2>
         <ul>
           {musicList.map((music) => (
             <li key={music.id} className="musiclist-box">
-              <h3>{music.musicName}</h3>
-              {/* Use the full path from the JSON file */}
-              <audio controls loop>
-                <source src={music.path} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
+              <img
+                src="./images/category-background-test.jpg"
+                alt=""
+                width="75px"
+                height="75px"
+              />
+              <div className="music-desc-container">
+                <p>{music.musicName}</p>
+                {/* Use the full path from the JSON file */}
+                <audio controls loop>
+                  <source src={music.path} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+              </div>
               <button onClick={() => handleAddToList(music)}>
                 Add to List
               </button>
@@ -106,7 +113,7 @@ const ListAndPlayer = () => {
         <ul>
           {personalList.map((music) => (
             <li key={music.id}>
-              <h3>{music.musicName}</h3>
+              <p>{music.musicName}</p>
               <audio controls loop>
                 <source src={music.path} type="audio/mpeg" />
                 Your browser does not support the audio element.

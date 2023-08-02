@@ -46,6 +46,16 @@
 .musiclist-box {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+  margin: 20px 0;
+  border: 2px solid #dfe4ef;
+  border-radius: 20px;
+  box-shadow: 1px 3px 20px 3px #dfe4ef;
+}
+
+.musiclist-box img {
+  border-radius: 20px;
 }
 
 /* Date and time */
