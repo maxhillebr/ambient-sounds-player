@@ -29,28 +29,29 @@
 
 /* Category Buttons styling */
 .c-item {
-  background-image: linear-gradient(
-    92.88deg,
-    #455eb5 9.16%,
-    #5643cc 43.89%,
-    #673fd7 64.72%
-  );
+  background-color: #f4f5fc;
+  border: 2px solid #dfe4ef;
   border-radius: 20px;
-  color: #ffffff;
-  flex-shrink: 0;
-  font-weight: 500;
   padding: 1rem 1.6rem;
-  text-shadow: rgba(0, 0, 0, 0.25) 0 3px 8px;
   transition: all 0.5s;
   text-align: center;
 }
 
 .c-item:hover {
-  box-shadow: rgba(80, 63, 205, 0.5) 0 1px 30px;
+  background-color: #ffff;
+  box-shadow: #c0bfcb80 0 1px 30px;
   transition-duration: 0.1s;
 }
 
 .musiclist-box {
   display: flex;
   justify-content: space-between;
+}
+
+/* Date and time */
+
+.time {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
 }

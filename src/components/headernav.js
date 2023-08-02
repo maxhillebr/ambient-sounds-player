@@ -1,14 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart } from "@fortawesome/free-solid-svg-icons";
 import "../css/headernav.css";
 
 const HeaderNav = () => {
+  // Date and Time
+
+  const [currentDate, setCurrentDate] = useState(new Date());
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setCurrentDate(new Date());
+    }, 1000); // Update every second
+
+    return () => {
+      clearInterval(intervalId);
+    };
+  }, []);
+
+  const formattedDate = currentDate.toLocaleDateString();
+  const currentHours = currentDate.getHours();
+  const currentMinutes = currentDate.getMinutes();
+
   return (
     <>
+      {/* Header */}
       <div className="header box">
         <div className="logo">
           <img src="/logo-ambient-sounds.png" alt="logo" width="238px" />
+        </div>
+        <div className="header-middle">
+          <div className="time">
+            {currentHours}:{currentMinutes < 10 ? "0" : ""}
+            {currentMinutes}
+          </div>
+          <div className="date">// {formattedDate}</div>
         </div>
 
         <div className="header-right">
