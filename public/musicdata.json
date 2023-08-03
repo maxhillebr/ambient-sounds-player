@@ -8,9 +8,15 @@
     },
     {
       "id": 2,
-      "musicName": "Sea Waves",
-      "artist": "Looperman",
-      "path": "/audio/waves-sea-waves.mp3"
+      "musicName": "Ocean Coast",
+      "artist": "Pixabay",
+      "path": "/audio/waves-ocean-coast.mp3"
+    },
+    {
+      "id": 3,
+      "musicName": "Soft Rain",
+      "artist": "Pixabay",
+      "path": "/audio/rain-soft-rain.mp3"
     }
   ],
 
@@ -53,27 +59,39 @@
       "musicName": "Slow Grind",
       "artist": "Looperman",
       "path": "/audio/guitar-slow-grind.wav"
+    },
+    {
+      "id": 4,
+      "musicName": "Full of Hope",
+      "artist": "Pixabay",
+      "path": "/audio/guitar-full-of-hope.mp3"
     }
   ],
 
   "musicListBirds": [
     {
       "id": 1,
-      "musicName": "Birds 1",
-      "artist": "Artist 1",
-      "path": "/audio/waves-loop.mp3"
+      "musicName": "Tropical Sound",
+      "artist": "Pixabay",
+      "path": "/audio/birds-tropical-sound.mp3"
     },
     {
       "id": 2,
-      "musicName": "Birds 2",
-      "artist": "Artist 2",
-      "path": "/audio/afrobeat-live-guitar-melody-marcory.wav"
+      "musicName": "River Sound",
+      "artist": "Pixabay",
+      "path": "/audio/birds-river-sound.mp3"
     },
     {
       "id": 3,
-      "musicName": "Birds 3",
-      "artist": "Artist 3",
-      "path": "/music/song3.mp3"
+      "musicName": "Forest Night Sounds",
+      "artist": "Pixabay",
+      "path": "/music/birds-forest-night-sounds.mp3"
+    },
+    {
+      "id": 3,
+      "musicName": "Singing River",
+      "artist": "Pixabay",
+      "path": "/music/birds-singing-river.mp3"
     }
   ]
 }

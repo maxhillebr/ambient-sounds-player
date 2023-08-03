@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMugHot,
@@ -12,6 +12,9 @@ const ListAndPlayer = () => {
   const [musicList, setMusicList] = useState([]);
   const [personalList, setPersonalList] = useState([]);
   const [selectedCategory, setSelectedCategory] = useState("Waves");
+
+  // Pause all button (stored as array to get all audio)
+  const refPlayPause = useRef();
 
   useEffect(() => {
     // Fetch music data from the JSON file
@@ -38,30 +41,35 @@ const ListAndPlayer = () => {
     }
   }, [selectedCategory]);
 
+  // Add the selected music to the personal list
   const handleAddToList = (music) => {
-    // Add the selected music to the personal list
     setPersonalList((prevList) => [...prevList, music]);
   };
 
+  // Filter out the music with the specified id from the personal list
   const handleRemove = (musicToRemove) => {
-    // Filter out the music with the specified id from the personal list
     setPersonalList((prevList) =>
       prevList.filter((music) => music.id !== musicToRemove.id)
     );
+  };
+
+  // Pause All Button
+  const handlePauseAll = () => {
+    refPlayPause.current.pause();
   };
 
   return (
     <>
       {/* Choose Category */}
       <div className="category box">
-        <div className="category-heading">
+        {/* <div className="category-heading">
           <h2>Choose a category</h2>
-        </div>
+        </div> */}
         <div className="c-items-container">
           <div className="c-item" onClick={() => setSelectedCategory("Waves")}>
             <FontAwesomeIcon icon={faWater} />
             <br />
-            Waves
+            Waves/Rain
           </div>
           <div className="c-item" onClick={() => setSelectedCategory("Cafe")}>
             <FontAwesomeIcon icon={faMugHot} />
@@ -94,7 +102,6 @@ const ListAndPlayer = () => {
               />
               <div className="music-desc-container">
                 <p>{music.musicName}</p>
-                {/* Use the full path from the JSON file */}
                 <audio controls loop>
                   <source src={music.path} type="audio/mpeg" />
                   Your browser does not support the audio element.
@@ -114,13 +121,14 @@ const ListAndPlayer = () => {
           {personalList.map((music) => (
             <li key={music.id}>
               <p>{music.musicName}</p>
-              <audio controls loop>
+              <audio controls loop ref={refPlayPause}>
                 <source src={music.path} type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
               <button onClick={() => handleRemove(music)}>Remove</button>
             </li>
           ))}
+          <button onClick={handlePauseAll}>Pause All</button>
         </ul>
       </div>
     </>
