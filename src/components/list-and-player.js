@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faMugHot,
@@ -14,7 +14,7 @@ const ListAndPlayer = () => {
   const [selectedCategory, setSelectedCategory] = useState("Waves");
 
   // Pause all button (stored as array to get all audio)
-  const refPlayPause = useRef();
+  const personalListAudioClass = "personallist-audio";
 
   useEffect(() => {
     // Fetch music data from the JSON file
@@ -55,7 +55,10 @@ const ListAndPlayer = () => {
 
   // Pause All Button
   const handlePauseAll = () => {
-    refPlayPause.current.pause();
+    let personalListAudio = document.querySelectorAll(".personallist-audio");
+    personalListAudio.forEach((audio) => {
+      audio.pause();
+    });
   };
 
   return (
@@ -121,7 +124,7 @@ const ListAndPlayer = () => {
           {personalList.map((music) => (
             <li key={music.id}>
               <p>{music.musicName}</p>
-              <audio controls loop ref={refPlayPause}>
+              <audio className={personalListAudioClass} controls loop>
                 <source src={music.path} type="audio/mpeg" />
                 Your browser does not support the audio element.
               </audio>
