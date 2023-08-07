@@ -85,13 +85,13 @@
       "id": 3,
       "musicName": "Forest Night Sounds",
       "artist": "Pixabay",
-      "path": "/music/birds-forest-night-sounds.mp3"
+      "path": "/audio/birds-forest-night-sounds.mp3"
     },
     {
       "id": 3,
       "musicName": "Singing River",
       "artist": "Pixabay",
-      "path": "/music/birds-singing-river.mp3"
+      "path": "/audio/birds-singing-river.mp3"
     }
   ]
 }
