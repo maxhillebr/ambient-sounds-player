@@ -13,9 +13,6 @@ root.render(
     <div className="container">
       <HeaderNav />
       <Sidebar />
-      <div className="visual box">
-        <h2>Visual effects when playing music</h2>
-      </div>
       <ListAndPlayer />
     </div>
     <footer className="footer box">©Max Hillebrand 2023</footer>
