@@ -1,19 +1,19 @@
 {
   "musicListWaves": [
     {
-      "id": 1,
+      "id": "waves-1",
       "musicName": "Slow Waves",
       "artist": "Looperman",
       "path": "/audio/waves-loop.mp3"
     },
     {
-      "id": 2,
+      "id": "waves-2",
       "musicName": "Ocean Coast",
       "artist": "Pixabay",
       "path": "/audio/waves-ocean-coast.mp3"
     },
     {
-      "id": 3,
+      "id": "waves-3",
       "musicName": "Soft Rain",
       "artist": "Pixabay",
       "path": "/audio/rain-soft-rain.mp3"
@@ -22,19 +22,19 @@
 
   "musicListCafe": [
     {
-      "id": 1,
+      "id": "cafe-1",
       "musicName": "Cafe 1",
       "artist": "Artist 1",
       "path": "/audio/waves-loop.mp3"
     },
     {
-      "id": 2,
+      "id": "cafe-2",
       "musicName": "Cafe 2",
       "artist": "Artist 2",
       "path": "/audio/afrobeat-live-guitar-melody-marcory.wav"
     },
     {
-      "id": 3,
+      "id": "cafe-3",
       "musicName": "Cafe 3",
       "artist": "Artist 3",
       "path": "/music/song3.mp3"
@@ -43,25 +43,25 @@
 
   "musicListGuitar": [
     {
-      "id": 1,
+      "id": "guitar-1",
       "musicName": "Afro Chill",
       "artist": "Looperman",
       "path": "/audio/guitar-afro-chill.wav"
     },
     {
-      "id": 2,
+      "id": "guitar-2",
       "musicName": "Spanish Classic Trap",
       "artist": "Looperman",
       "path": "/audio/guitar-spanish-classic-trap.wav"
     },
     {
-      "id": 3,
+      "id": "guitar-3",
       "musicName": "Slow Grind",
       "artist": "Looperman",
       "path": "/audio/guitar-slow-grind.wav"
     },
     {
-      "id": 4,
+      "id": "guitar-4",
       "musicName": "Full of Hope",
       "artist": "Pixabay",
       "path": "/audio/guitar-full-of-hope.mp3"
@@ -70,25 +70,25 @@
 
   "musicListBirds": [
     {
-      "id": 1,
+      "id": "birds-1",
       "musicName": "Tropical Sound",
       "artist": "Pixabay",
       "path": "/audio/birds-tropical-sound.mp3"
     },
     {
-      "id": 2,
+      "id": "birds-2",
       "musicName": "River Sound",
       "artist": "Pixabay",
       "path": "/audio/birds-river-sound.mp3"
     },
     {
-      "id": 3,
+      "id": "birds-3",
       "musicName": "Forest Night Sounds",
       "artist": "Pixabay",
       "path": "/audio/birds-forest-night-sounds.mp3"
     },
     {
-      "id": 3,
+      "id": "birds-4",
       "musicName": "Singing River",
       "artist": "Pixabay",
       "path": "/audio/birds-singing-river.mp3"
