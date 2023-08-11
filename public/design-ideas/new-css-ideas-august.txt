@@ -1,0 +1,61 @@
+Buttons New CSS - notes
+
+- delete icons
+- new names:
+Sea
+Cafe
+Birds
+Guitar
+Show All
+
+----------------
+- new padding for c-items:
+
+padding: 0.7rem 1.6rem;
+
+--------------------
+- header:
+
+box-shadow: 1px 3px 20px 3px #dfe4ef;
+background: linear-gradient(90deg, rgb(249 249 249) 0%, rgb(233 233 233) 35%, rgb(255 255 255) 100%);
+--------------
+
+
+
+CSS Buttons: 
+
+Sea:
+
+background: linear-gradient(150deg, #4d9ffd 0%, #3b74b5 99%);
+color: white;
+font-weight: bold;
+
+Cafe:
+
+background: linear-gradient(150deg, #9f6c59 0%, #5e3c2f 99%);
+color: white;
+font-weight: bold;
+
+
+Birds:
+
+background: linear-gradient(150deg, rgba(66,149,59,1) 0%, rgb(54 86 51) 99%);
+color: white;
+font-weight: bold;
+
+
+Guitar
+
+background: linear-gradient(150deg, #cb9b3a 0%, #876b32 99%);
+color: white;
+font-weight: bold;
+
+------------------------
+
+Show All
+
+nothing changed
+
+
+
+

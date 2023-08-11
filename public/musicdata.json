@@ -23,21 +23,21 @@
   "musicListCafe": [
     {
       "id": "cafe-1",
-      "musicName": "Cafe 1",
-      "artist": "Artist 1",
-      "path": "/audio/waves-loop.mp3"
+      "musicName": "NYC Diner",
+      "artist": "Pixabay",
+      "path": "/audio/cafe-nyc-diner-ambience.mp3"
     },
     {
       "id": "cafe-2",
-      "musicName": "Cafe 2",
-      "artist": "Artist 2",
-      "path": "/audio/afrobeat-live-guitar-melody-marcory.wav"
+      "musicName": "People Talking",
+      "artist": "Pixabay",
+      "path": "/audio/cafe-people-talking-cafe-ambience.mp3"
     },
     {
       "id": "cafe-3",
-      "musicName": "Cafe 3",
-      "artist": "Artist 3",
-      "path": "/music/song3.mp3"
+      "musicName": "Restaurant (Sunny Point Cafe)",
+      "artist": "Pixabay",
+      "path": "/audio/cafe-restaurant-sounds-sunny-point-cafe.mp3"
     }
   ],
 
