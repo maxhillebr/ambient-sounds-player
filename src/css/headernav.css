@@ -6,10 +6,13 @@
   display: flex;
   justify-content: space-between;
   grid-area: 1 / 1 / 2 / 4;
-  background-color: #ebeff8;
-  border: 1px solid #dfe4ef;
-  border-radius: 20px;
   box-shadow: 1px 3px 20px 3px #dfe4ef;
+  background: linear-gradient(
+    90deg,
+    rgb(249 249 249) 0%,
+    rgb(233 233 233) 35%,
+    rgb(255 255 255) 100%
+  );
 }
 
 .header a {

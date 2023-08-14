@@ -1,24 +1,17 @@
 import React, { useEffect, useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faMugHot,
-  faWater,
-  faDove,
-  faGuitar,
-} from "@fortawesome/free-solid-svg-icons";
 import "../css/list-and-player.css";
 
 const ListAndPlayer = () => {
   const [musicList, setMusicList] = useState([]);
   const [personalList, setPersonalList] = useState([]);
-  const [selectedCategory, setSelectedCategory] = useState("Waves");
+  const [selectedCategory, setSelectedCategory] = useState("Sea");
 
   // Pause all button (stored as array to get all audio)
   const personalListAudioClass = "personallist-audio";
 
   useEffect(() => {
     // Fetch music data from the JSON file
-    if (selectedCategory === "Waves") {
+    if (selectedCategory === "Sea") {
       fetch("/musicdata.json")
         .then((response) => response.json())
         .then((data) => setMusicList(data.musicListWaves))
@@ -28,7 +21,7 @@ const ListAndPlayer = () => {
         .then((response) => response.json())
         .then((data) => setMusicList(data.musicListCafe)) // Use 'musiclistcafe' here
         .catch((error) => console.error("Error fetching music data:", error));
-    } else if (selectedCategory === "Birds") {
+    } else if (selectedCategory === "Forest") {
       fetch("/musicdata.json") // Update the URL to fetch the 'musiclistcafe' data
         .then((response) => response.json())
         .then((data) => setMusicList(data.musicListBirds)) // Use 'musiclistcafe' here
@@ -65,29 +58,42 @@ const ListAndPlayer = () => {
     <>
       {/* Choose Category */}
       <div className="category box">
-        {/* <div className="category-heading">
-          <h2>Choose a category</h2>
-        </div> */}
+        <div className="entry-text">
+          <h2>Ambient Sounds for a good working enviroment</h2>
+          <p>
+            Choose your Category, add sounds to your list and press play. Enjoy!
+          </p>
+        </div>
         <div className="c-items-container">
-          <div className="c-item" onClick={() => setSelectedCategory("Waves")}>
-            <FontAwesomeIcon icon={faWater} />
-            <br />
-            Waves/Rain
+          <div
+            className="c-item sea-category"
+            onClick={() => setSelectedCategory("Sea")}
+          >
+            Sea
           </div>
-          <div className="c-item" onClick={() => setSelectedCategory("Cafe")}>
-            <FontAwesomeIcon icon={faMugHot} />
-            <br />
+          <div
+            className="c-item cafe-category"
+            onClick={() => setSelectedCategory("Cafe")}
+          >
             Cafe
           </div>
-          <div className="c-item" onClick={() => setSelectedCategory("Birds")}>
-            <FontAwesomeIcon icon={faDove} />
-            <br />
-            Birds
+          <div
+            className="c-item forest-category"
+            onClick={() => setSelectedCategory("Forest")}
+          >
+            Forest
           </div>
-          <div className="c-item" onClick={() => setSelectedCategory("Guitar")}>
-            <FontAwesomeIcon icon={faGuitar} />
-            <br />
+          <div
+            className="c-item guitar"
+            onClick={() => setSelectedCategory("Guitar")}
+          >
             Guitar
+          </div>
+          <div
+            className="c-item show-all"
+            onClick={() => setSelectedCategory("Guitar")}
+          >
+            Show All
           </div>
         </div>
         {/* <div className="c-pagination">previous 1 2 3 next</div> */}
@@ -117,22 +123,34 @@ const ListAndPlayer = () => {
           ))}
         </ul>
       </div>
-
       <div className="audio-player box">
-        <h2>Personal List</h2>
-        <ul>
-          {personalList.map((music) => (
-            <li key={music.id}>
-              <p>{music.musicName}</p>
-              <audio className={personalListAudioClass} controls loop>
-                <source src={music.path} type="audio/mpeg" />
-                Your browser does not support the audio element.
-              </audio>
-              <button onClick={() => handleRemove(music)}>Remove</button>
-            </li>
-          ))}
-          <button onClick={handlePauseAll}>Pause All</button>
-        </ul>
+        <div className="audio-player-wrapper">
+          <div className="audio-player-img">
+            <img
+              src="../images/recoder-placeholder.jpg"
+              alt="placeholder"
+              width="150px"
+              height=""
+            />
+          </div>
+          <div className="audio-player-buttons">
+            <button onClick={handlePauseAll}>Pause All</button>
+            <button onClick={handlePauseAll}>Load</button>
+            <button onClick={handlePauseAll}>Save</button>
+          </div>
+          <ul>
+            {personalList.map((music) => (
+              <li key={music.id}>
+                <p>{music.musicName}</p>
+                <audio className={personalListAudioClass} controls loop>
+                  <source src={music.path} type="audio/mpeg" />
+                  Your browser does not support the audio element.
+                </audio>
+                <button onClick={() => handleRemove(music)}>Remove</button>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </>
   );

@@ -1,10 +1,6 @@
 .sidebar {
   grid-area: 2 / 1 / 4 / 2;
   text-align: center;
-  background-color: #ebeff8;
-  border: 1px solid #dfe4ef;
-  border-radius: 20px;
-  box-shadow: 1px 3px 20px 3px #dfe4ef;
 }
 
 .content {
@@ -18,12 +14,11 @@ ul {
 }
 
 .sidebar li {
-  background-color: #f4f5fc;
-  border: 2px solid #dfe4ef;
   border-radius: 20px;
   padding: 0.5rem 1rem;
   transition: all 0.5s;
   text-align: center;
+  background-color: #f4f5fc;
   margin: 21px;
 }
 

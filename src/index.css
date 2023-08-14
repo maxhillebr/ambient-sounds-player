@@ -6,7 +6,6 @@ body {
   font-family: "IBM Plex Sans Condensed", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f5fc;
 }
 
 code {
@@ -48,10 +47,10 @@ Take every css to the right position if needed! */
 
 .container {
   display: grid;
-  grid-template-columns: 187px 1.2fr 1.2fr;
+  grid-template-columns: 187px 1.8fr 1.2fr;
   gap: 29px;
   grid-auto-flow: row;
-  margin: 20px;
+  margin: 0;
 }
 
 .visual {
@@ -65,7 +64,7 @@ Take every css to the right position if needed! */
 
 button {
   background-color: #f4f5fc;
-  border: 2px solid #dfe4ef;
+  border: none;
   border-radius: 20px;
   text-align: center;
   padding: 1rem 1.6rem;
